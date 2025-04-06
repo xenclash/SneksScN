@@ -1,2 +1,2 @@
 # SneksScN
-First personal pent-testing tool for HTB and Bug bounty hunting project.
+First network script personal project. Make sure to import nmap!
