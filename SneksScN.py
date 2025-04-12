@@ -6,7 +6,19 @@ import argparse
 from concurrent.futures import ThreadPoolExecutor
 import distro
 
+# Basic user interface header
+print("""
+ .oooooo..o                       oooo                  .oooooo..o           ooooo      ooo 
+d8P'    `Y8                       `888                 d8P'    `Y8           `888b.     `8' 
+Y88bo.      ooo. .oo.    .ooooo.   888  oooo   .oooo.o Y88bo.       .ooooo.   8 `88b.    8  
+ `"Y8888o.  `888P"Y88b  d88' `88b  888 .8P'   d88(  "8  `"Y8888o.  d88' `"Y8  8   `88b.  8  
+     `"Y88b  888   888  888ooo888  888888.    `"Y88b.       `"Y88b 888        8     `88b.8  
+oo     .d8P  888   888  888    .o  888 `88b.  o.  )88b oo     .d8P 888   .o8  8       `888  
+8""88888P'  o888o o888o `Y8bod8P' o888o o888o 8""888P' 8""88888P'  `Y8bod8P' o8o        `8 """)
+print("                  Created by Marcelo M / @Xenclash on Github                        \n")
+
 def validate_network(network):
+    """Validate the provided network range or IP address."""
     try:
         ipaddress.ip_network(network, strict=False)
         return True
@@ -14,6 +26,7 @@ def validate_network(network):
         return False
 
 def get_active_ips(network):
+    """Scan the network for active devices."""
     nm = nmap.PortScanner()
     print(f"Currently scanning network: {network}...")
     try:
@@ -30,6 +43,7 @@ def get_active_ips(network):
     return active_ips
 
 def get_os_info(ip):
+    """Get the operating system information for a specific IP."""
     nm = nmap.PortScanner()
     try:
         print(f"Scanning OS information for {ip}...")
@@ -44,13 +58,17 @@ def get_os_info(ip):
         return f"Error: {str(e)}"
 
 def get_linux_distro():
-
-    distro_name = distro.name(pretty=True)
-    if not distro_name:
-        return "Unknown Linux Distribution"
-    return distro_name
+    """Get the Linux distribution of the host machine."""
+    try:
+        distro_name = distro.name(pretty=True)
+        if not distro_name:
+            return "Unknown Linux Distribution"
+        return distro_name
+    except Exception as e:
+        return f"Error detecting Linux distribution: {str(e)}"
 
 def scan_network_and_identify_os(network):
+    """Scan the network for active devices and identify their operating systems."""
     active_ips = get_active_ips(network)
     if not active_ips:
         print("No active devices found.")
