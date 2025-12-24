@@ -15,7 +15,7 @@ Y88bo.      ooo. .oo.    .ooooo.   888  oooo   .oooo.o Y88bo.       .ooooo.   8 
      `"Y88b  888   888  888ooo888  888888.    `"Y88b.       `"Y88b 888        8     `88b.8  
 oo     .d8P  888   888  888    .o  888 `88b.  o.  )88b oo     .d8P 888   .o8  8       `888  
 8""88888P'  o888o o888o `Y8bod8P' o888o o888o 8""888P' 8""88888P'  `Y8bod8P' o8o        `8 """)
-print("                  Created by Marcelo M / @Xenclash on Github                        \n")
+print("                  Created by @xenclash on Github                                    \n")
 
 def validate_network(network):
     """Validate the provided network range or IP address."""
