@@ -1,5 +1,5 @@
 # SneksScN
-First network script personal project. Make sure to import nmap, ipaddress, argparse, and distro. Will further improve this project.
+First network script personal student project. Make sure to import nmap, ipaddress, argparse, and distro. Will further improve this project.
 
 📡 SneksScN — Ethical Network Scanner
 
