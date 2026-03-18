@@ -31,3 +31,5 @@ This tool is designed for educational and authorized security purposes only.
 Before running WiScan on any network, ensure you have explicit permission from the network owner.
 
 Unauthorized scanning or interference with wireless networks is illegal in many jurisdictions and strictly prohibited.
+
+> - AI assisted enhancements applied to debugging, optimization, and automation
