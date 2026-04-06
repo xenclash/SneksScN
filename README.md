@@ -32,4 +32,4 @@ Before running WiScan on any network, ensure you have explicit permission from t
 
 Unauthorized scanning or interference with wireless networks is illegal in many jurisdictions and strictly prohibited.
 
-> - AI assisted enhancements applied to debugging, optimization, and automation
+> - All code is made by scratch, then used Copilot to assist with enhancements applied to debugging, and optimization.
