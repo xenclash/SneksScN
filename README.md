@@ -6,19 +6,19 @@ My first network script personal student project. Make sure to import nmap, ipad
 SneksScN is a Python based wireless network scanner built for ethical cybersecurity engineers, penetration testers, and network administrators.
 It provides a simple way to detect and analyze nearby WiFi networks for educational and authorized security testing purposes.
 
-⚙️ Features
+Features
 
-🛰️ Scans for Wi‑Fi networks
+-Scans for Wi‑Fi networks
 
-🧩 Supports multiple network interfaces
+-Supports multiple network interfaces
 
-🔍 Displays network details in a clean, structured table
+-Displays network details in a clean, structured table
 
-💾 Optional output to text or CSV for reporting
+-Optional output to text or CSV for reporting
 
-🧠 Built with Python 3 using standard libraries and open‑source modules
+-Built with Python 3 using standard libraries and open‑source modules
 
-🚀 Getting Started
+Getting Started
 1. Clone the repository
 > git clone https://github.com/xenclash/SneksScN.git
 
